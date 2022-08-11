@@ -1,0 +1,388 @@
+html,   body    {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #023020;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: #090;
+}
+
+.container  {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.body   {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 0 0 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: block;
+}
+
+/*header*/
+header  {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    line-height: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #090;
+}
+
+/*topnav bar*/
+header  .topnav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 0;
+    margin: 0 auto;
+}
+
+header  .topnav .burg   {
+    display: inline;
+    margin: 0 0 0 5vw;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header  .topnav  .burg  span   {
+    font-size: 21px;
+    cursor: pointer;
+    color: #fff;
+}
+
+header  .topnav .name   {
+    display: inline;
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+}
+
+header  .topnav  .name  a   {
+    font-size: 21px;
+    font-weight: 900;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+header  .topnav .name   a:hover {
+    cursor: pointer;
+}
+
+/*main page logo image*/
+header  .logohead   {
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+header  .logohead   img {
+    resize: both;
+    width: 80vw;
+    height: auto;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    border-radius: 10px;
+}
+
+/*headnote*/
+header  .headnote   {
+    width: 100%;
+    height: auto;
+    padding: 0 0 3rem 0;
+    margin: 0 auto;
+}
+
+header  .headnote   .ordernow   {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+}
+
+header  .headnote   .ordernow  p   {
+    padding: 12px 14px;
+    color: #fff;
+    font-size: 14px;
+    font-family: monospace;
+}
+
+header  .headnote   .contactus  {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+}
+
+header  .headnote   .contactus  a   {
+    text-decoration: none;
+    padding: 12px 24px;
+    color: #000;
+    font-size: 16px;
+    font-family: monospace;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px 3px #555;
+}
+
+header  .headnote   .contactus  a:hover {
+    box-shadow: none;
+}
+
+/*sidenav*/
+.sidenav    {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+}
+
+.sidenav    a   {
+    padding: 8px 8px 8px 4rem;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.sidenav    a:hover {
+    cursor: pointer;
+    text-decoration: underline #f00;
+}
+
+.sidenav    .closebtn   {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 36px;
+    margin-left: 24px;
+    padding: 8px;
+    color: #000;
+    display: block;
+    text-align: left;
+}
+
+.sidenav    .closebtn:hover {
+    color: #f00;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.sidenav    .here   {
+    text-decoration: underline #f00;
+}
+
+.sidenav    .here:hover {
+    cursor: pointer;
+}
+
+/*main-content*/
+.main-content   {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.main-content   .avalanch   {
+    width: 100%;
+    height: auto;
+}
+
+/*footer*/
+footer  {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: #090;
+    text-align: center;
+    display: inline-block;
+    margin: 10rem auto 0 auto;
+}
+
+/*hours of operation*/
+footer  .avalanch   .business-hours {
+    position: relative;
+    background: #222;
+    padding: 40px 14px;
+    margin: 5rem auto 15px auto;
+    min-width: 225px;
+    max-width: 350px;
+    height: auto;
+    background-color: #023020;
+}
+
+footer  .avalanch   .business-hours .title  {
+    font-size: 20px;
+    color: #fff;
+    font-family: monospace;
+    text-transform: uppercase;
+    padding-left: 5px;
+    border-left: 4px solid #090;
+    text-align: left;
+}
+
+footer  .avalanch   .business-hours .opening-hours  {
+    width: auto;
+    height: auto;
+    display: block;
+    text-align: left;
+}
+
+footer  .avalanch   .business-hours .opening-hours  li  {
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 30px;
+    border-bottom: 1px solid #333;
+    list-style-type: none;
+}
+
+footer  .avalanch   .business-hours .opening-hours  li:last-child   {
+    border-bottom: none; 
+}
+
+/*reviews*/
+footer  .avalanch   .reviews    {
+    position: relative;
+    background: #222;
+    padding: 40px 14px;
+    margin: 5rem auto 15px auto;
+    min-width: 225px;
+    max-width: 350px;
+    height: auto;
+    background-color: #023020;
+    border-top-style: solid 3px #023020;
+}
+
+footer  .avalanch   .reviews    .customer  {
+    font-size: 20px;
+    color: #fff;
+    font-family: monospace;
+    text-transform: uppercase;
+    padding-left: 5px;
+    border-left: 4px solid #090;
+    text-align: left;
+}
+
+footer  .avalanch   .reviews    .the-reviews    {
+    width: auto;
+    height: auto;
+}
+
+footer  .avalanch   .reviews    .the-reviews    p   {
+    font-size: 20px;
+    color: #fff;
+    text-align: left;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer  .foot   {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+footer  .foot   p   {
+    font-size: 14px;
+    font-family: monospace;
+    padding: 8px;
+    color: #fff;
+}
+
+@media only screen and (max-width: 319px)   {
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px)   {
+}
+
+@media only screen and (min-width: 480px) and (max-width: 599px)   {
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px)   {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px)   {
+    /*header name*/
+    header  .topnav  .name  a   {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px)   {
+    /*header name*/
+    header  .topnav  .name  a   {
+        font-size: 36px;
+    }
+
+    /*avalanch*/
+    footer  .avalanch   {
+        justify-content: space-around;
+        display: flex;
+    }
+
+    footer  .avalanch   .business-hours {
+        justify-content: space-between;
+    }
+
+    footer  .avalanch   .reviews    {
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 1200px)   {
+    /*header name*/
+    header  .topnav  .name  a   {
+        font-size: 36px;
+    }
+
+    /*avalanch*/
+    footer  .avalanch   {
+        justify-content: space-around;
+        display: flex;
+    }
+
+    footer  .avalanch   .business-hours {
+        justify-content: space-between;
+    }
+
+    footer  .avalanch   .reviews    {
+        justify-content: space-between;
+    }
+}

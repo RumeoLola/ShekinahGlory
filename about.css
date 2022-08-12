@@ -218,9 +218,17 @@ header  .headnote   .contactus  a:hover {
     margin: 0 auto;
 }
 
-.main-content   .avalanch   {
+.main-content   .aboutshek   {
     width: 100%;
     height: auto;
+}
+
+.main-content   .aboutshek  p   {
+    font-size: 14px;
+    color: #fff;
+    font-family: monospace;
+    text-align: left;
+    padding: 12px 14px;
 }
 
 /*footer*/

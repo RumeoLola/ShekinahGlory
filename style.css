@@ -220,24 +220,44 @@ header  .headnote   .contactus  a:hover {
 
 .main-content   .reference  {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 0 16px;
     margin: 12px;
+    text-align: center;
 }
 
-.main-content   .reference  .pages  {
-    display: block;
-    width: 300px;
-    height: auto;
-    padding: 0 16px;
-    justify-content: space-evenly;
+.main-content   .reference  .list   {
     display: inline-block;
+    justify-content: space-between;
 }
 
-.main-content   .reference  .pages  img{
+.main-content   .reference  .list   .pages  {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 16px;
+    text-decoration: none;
+}
+
+.main-content   .reference  .list   .pages:hover    img {
+    box-shadow: none;
+}
+
+.main-content   .reference  .list   .pages  img{
+
     resize: both;
     width: 300px;
     height: auto;
+    padding: 0;
+    margin: 0 auto 12px auto;
+    border-radius: 2%;
+    box-shadow: 0 0 3px #fff;
+}
+
+.main-content   .reference  .list   .pages  span    {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 footer  {

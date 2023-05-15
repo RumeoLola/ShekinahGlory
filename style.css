@@ -258,7 +258,6 @@ header  .headnote   .contactus  a:hover {
     bottom: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
     color: #000;
     font-size: 24px;
     padding: 0;

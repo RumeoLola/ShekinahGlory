@@ -51,6 +51,7 @@ header  .topnav {
     width: 100%;
     height: auto;
     display: flex;
+    justify-content: space-between;
     padding: 0;
     margin: 0 auto;
 }
@@ -59,9 +60,8 @@ header  .topnav .burg   {
     display: inline;
     margin: 0 0 0 5vw;
     padding: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
+    justify-content: space-around;
+    display: inline-block;
 }
 
 header  .topnav  .burg  span   {
@@ -72,6 +72,10 @@ header  .topnav  .burg  span   {
 
 header  .topnav .name   {
     display: inline;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    display: inline-block;
     width: auto;
     height: auto;
     text-align: center;
@@ -80,7 +84,7 @@ header  .topnav .name   {
 }
 
 header  .topnav  .name  a   {
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 900;
     color: #fff;
     text-decoration: none;
@@ -90,6 +94,23 @@ header  .topnav  .name  a   {
 
 header  .topnav .name   a:hover {
     cursor: pointer;
+}
+
+header  .topnav .shopcart   {
+    display: inline;
+    margin: 13px 5vw 0 0;
+    padding: 0;
+    justify-content: space-around;
+    display: inline-block;
+}
+
+header  .topnav .shopcart   a   {
+    text-decoration: none;
+}
+
+header  .topnav .shopcart   a   i   {
+    font-size: 21px;
+    color: #fff;
 }
 
 /*main page logo image*/
@@ -105,7 +126,7 @@ header  .logohead   img {
     width: 80vw;
     height: auto;
     padding: 0;
-    margin: 1rem 0 0 0;
+    margin: 0;
     border-radius: 10px;
 }
 
@@ -113,7 +134,7 @@ header  .logohead   img {
 header  .headnote   {
     width: 100%;
     height: auto;
-    padding: 0 0 3rem 0;
+    padding: 0 0 1rem 0;
     margin: 0 auto;
 }
 
@@ -142,7 +163,7 @@ header  .headnote   .contactus  {
 
 header  .headnote   .contactus  a   {
     text-decoration: none;
-    padding: 12px 24px;
+    padding: 12px;
     color: #000;
     font-size: 16px;
     font-family: monospace;
@@ -218,68 +239,53 @@ header  .headnote   .contactus  a:hover {
     margin: 0 auto;
 }
 
-/*menu items*/
-.main-content   .manu   {
-    width: auto;
-    height: auto;
-    margin: 3rem auto;
-    padding: 0;
+.main-content   .reference  {
+    display: block;
     text-align: center;
+    justify-content: space-evenly;
+    padding: 0 16px;
+    margin: 12px;
 }
 
-.main-content   .manu   .list   {
-    width: 225px;
-    height: 250px;
-    margin: 0 auto;
-    padding: 1rem;
-    text-decoration: none;
-    color: #000;
-    font-size: 16px;
-    font-family: monospace;
+.main-content   .reference  .pages  {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 16px;
+    padding: 0;
+    justify-content: space-evenly;
     display: inline-block;
     position: relative;
+    top: auto;
+    right: auto;
 }
 
-.main-content   .manu   .list   .this   {
+.main-content   .reference  .pages  a   {
     text-decoration: none;
-    width: auto;
-    height: auto;
-    padding: 0;
 }
 
-.main-content   .manu   .list   .this   img {
+.main-content   .reference  .pages  a   img{
     resize: both;
-    width: 225px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #fff;
-}
-
-.main-content   .manu   .list   .this   img:hover   {
-    cursor: pointer;
-    box-shadow: none;
-}
-
-.main-content   .manu   .list   .this   h1  {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0,0,0,0.5);
-    color: #fff;
-    color: #fff;
-    font-size: 21px;
-    font-family: monospace;
+    width: 300px;
     padding: 0;
-    text-align: left;
-}
-
-.main-content   .avalanch   {
-    width: 100%;
+    margin: 0;
     height: auto;
+    border-radius: 2%;
+    filter: blur(3px);
 }
 
-/*footer*/
+.main-content   .reference  .pages  a   h4  {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 footer  {
     position: relative;
     left: 0;
@@ -289,93 +295,10 @@ footer  {
     background-color: #090;
     text-align: center;
     display: inline-block;
-    margin: 10rem auto 0 auto;
+    margin: 0 auto;
 }
 
-/*hours of operation*/
-footer  .avalanch   .business-hours {
-    position: relative;
-    background: #222;
-    padding: 40px 14px;
-    margin: 5rem auto 15px auto;
-    min-width: 225px;
-    max-width: 350px;
-    height: auto;
-    background-color: #023020;
-}
-
-footer  .avalanch   .business-hours .title  {
-    font-size: 20px;
-    color: #fff;
-    font-family: monospace;
-    text-transform: uppercase;
-    padding-left: 5px;
-    border-left: 4px solid #090;
-    text-align: left;
-}
-
-footer  .avalanch   .business-hours .opening-hours  {
-    width: auto;
-    height: auto;
-    display: block;
-    text-align: left;
-}
-
-footer  .avalanch   .business-hours .opening-hours  li  {
-    color: #fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 30px;
-    border-bottom: 1px solid #333;
-    list-style-type: none;
-}
-
-footer  .avalanch   .business-hours .opening-hours  li:last-child   {
-    border-bottom: none; 
-}
-
-/*reviews*/
-footer  .avalanch   .reviews    {
-    position: relative;
-    background: #222;
-    padding: 40px 14px;
-    margin: 5rem auto 15px auto;
-    min-width: 225px;
-    max-width: 350px;
-    height: auto;
-    background-color: #023020;
-    border-top-style: solid 3px #023020;
-}
-
-footer  .avalanch   .reviews    .customer  {
-    font-size: 20px;
-    color: #fff;
-    font-family: monospace;
-    text-transform: uppercase;
-    padding-left: 5px;
-    border-left: 4px solid #090;
-    text-align: left;
-}
-
-footer  .avalanch   .reviews    .the-reviews    {
-    width: auto;
-    height: auto;
-}
-
-footer  .avalanch   .reviews    .the-reviews    p   {
-    font-size: 20px;
-    color: #fff;
-    text-align: left;
-    font-style: italic;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-footer  .foot   {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-footer  .foot   p   {
+footer   p   {
     font-size: 14px;
     font-family: monospace;
     padding: 8px;
@@ -395,88 +318,10 @@ footer  .foot   p   {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px)   {
-    /*header name*/
-    header  .topnav  .name  a   {
-        font-size: 36px;
-    }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px)   {
-    /*header name*/
-    header  .topnav  .name  a   {
-        font-size: 36px;
-    }
 
-    /*menu items*/
-    .main-content   .manu   .list   {
-        resize: both;
-        width: 350px;
-        height: 375px;
-    }
-    
-    .main-content   .manu   .list   .this   {
-        resize: both;
-        width: auto;
-        height: auto;
-    }
-    
-    .main-content   .manu   .list   .this   img {
-        resize: both;
-        width: 350px;
-        height: auto;
-    }
-
-    /*avalanch*/
-    footer  .avalanch   {
-        justify-content: space-around;
-        display: flex;
-    }
-
-    footer  .avalanch   .business-hours {
-        justify-content: space-between;
-    }
-
-    footer  .avalanch   .reviews    {
-        justify-content: space-between;
-    }
-}
 
 @media only screen and (min-width: 1200px)   {
-    /*header name*/
-    header  .topnav  .name  a   {
-        font-size: 36px;
-    }
-
-    /*menu items*/
-    .main-content   .manu   .list   {
-        resize: both;
-        width: 350px;
-        height: 375px;
-    }
-    
-    .main-content   .manu   .list   .this   {
-        resize: both;
-        width: auto;
-        height: auto;
-    }
-    
-    .main-content   .manu   .list   .this   img {
-        resize: both;
-        width: 350px;
-        height: auto;
-    }
-
-    /*avalanch*/
-    footer  .avalanch   {
-        justify-content: space-around;
-        display: flex;
-    }
-
-    footer  .avalanch   .business-hours {
-        justify-content: space-between;
-    }
-
-    footer  .avalanch   .reviews    {
-        justify-content: space-between;
-    }
 }

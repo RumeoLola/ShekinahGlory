@@ -58,7 +58,7 @@ header  .topnav {
 
 header  .topnav .burg   {
     display: inline;
-    margin: 0 0 0 12px;
+    margin: 0 0 0 5vw;
     padding: 0;
     justify-content: space-around;
     display: inline-block;
@@ -98,7 +98,7 @@ header  .topnav .name   a:hover {
 
 header  .topnav .shopcart   {
     display: inline;
-    margin: 13px 12px 0 0;
+    margin: 13px 5vw 0 0;
     padding: 0;
     justify-content: space-around;
     display: inline-block;

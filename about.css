@@ -51,6 +51,7 @@ header  .topnav {
     width: 100%;
     height: auto;
     display: flex;
+    justify-content: space-between;
     padding: 0;
     margin: 0 auto;
 }
@@ -59,9 +60,8 @@ header  .topnav .burg   {
     display: inline;
     margin: 0 0 0 5vw;
     padding: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
+    justify-content: space-around;
+    display: inline-block;
 }
 
 header  .topnav  .burg  span   {
@@ -72,6 +72,10 @@ header  .topnav  .burg  span   {
 
 header  .topnav .name   {
     display: inline;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    display: inline-block;
     width: auto;
     height: auto;
     text-align: center;
@@ -80,7 +84,7 @@ header  .topnav .name   {
 }
 
 header  .topnav  .name  a   {
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 900;
     color: #fff;
     text-decoration: none;
@@ -90,6 +94,23 @@ header  .topnav  .name  a   {
 
 header  .topnav .name   a:hover {
     cursor: pointer;
+}
+
+header  .topnav .shopcart   {
+    display: inline;
+    margin: 13px 5vw 0 0;
+    padding: 0;
+    justify-content: space-around;
+    display: inline-block;
+}
+
+header  .topnav .shopcart   a   {
+    text-decoration: none;
+}
+
+header  .topnav .shopcart   a   i   {
+    font-size: 21px;
+    color: #fff;
 }
 
 /*main page logo image*/
@@ -105,7 +126,7 @@ header  .logohead   img {
     width: 80vw;
     height: auto;
     padding: 0;
-    margin: 1rem 0 0 0;
+    margin: 0;
     border-radius: 10px;
 }
 
@@ -113,7 +134,7 @@ header  .logohead   img {
 header  .headnote   {
     width: 100%;
     height: auto;
-    padding: 0 0 3rem 0;
+    padding: 0 0 1rem 0;
     margin: 0 auto;
 }
 
@@ -142,7 +163,7 @@ header  .headnote   .contactus  {
 
 header  .headnote   .contactus  a   {
     text-decoration: none;
-    padding: 12px 24px;
+    padding: 12px;
     color: #000;
     font-size: 16px;
     font-family: monospace;
@@ -231,7 +252,6 @@ header  .headnote   .contactus  a:hover {
     padding: 12px 14px;
 }
 
-/*footer*/
 footer  {
     position: relative;
     left: 0;
@@ -241,93 +261,10 @@ footer  {
     background-color: #090;
     text-align: center;
     display: inline-block;
-    margin: 10rem auto 0 auto;
+    margin: 0 auto;
 }
 
-/*hours of operation*/
-footer  .avalanch   .business-hours {
-    position: relative;
-    background: #222;
-    padding: 40px 14px;
-    margin: 5rem auto 15px auto;
-    min-width: 225px;
-    max-width: 350px;
-    height: auto;
-    background-color: #023020;
-}
-
-footer  .avalanch   .business-hours .title  {
-    font-size: 20px;
-    color: #fff;
-    font-family: monospace;
-    text-transform: uppercase;
-    padding-left: 5px;
-    border-left: 4px solid #090;
-    text-align: left;
-}
-
-footer  .avalanch   .business-hours .opening-hours  {
-    width: auto;
-    height: auto;
-    display: block;
-    text-align: left;
-}
-
-footer  .avalanch   .business-hours .opening-hours  li  {
-    color: #fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 30px;
-    border-bottom: 1px solid #333;
-    list-style-type: none;
-}
-
-footer  .avalanch   .business-hours .opening-hours  li:last-child   {
-    border-bottom: none; 
-}
-
-/*reviews*/
-footer  .avalanch   .reviews    {
-    position: relative;
-    background: #222;
-    padding: 40px 14px;
-    margin: 5rem auto 15px auto;
-    min-width: 225px;
-    max-width: 350px;
-    height: auto;
-    background-color: #023020;
-    border-top-style: solid 3px #023020;
-}
-
-footer  .avalanch   .reviews    .customer  {
-    font-size: 20px;
-    color: #fff;
-    font-family: monospace;
-    text-transform: uppercase;
-    padding-left: 5px;
-    border-left: 4px solid #090;
-    text-align: left;
-}
-
-footer  .avalanch   .reviews    .the-reviews    {
-    width: auto;
-    height: auto;
-}
-
-footer  .avalanch   .reviews    .the-reviews    p   {
-    font-size: 20px;
-    color: #fff;
-    text-align: left;
-    font-style: italic;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-footer  .foot   {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-footer  .foot   p   {
+footer   p   {
     font-size: 14px;
     font-family: monospace;
     padding: 8px;
@@ -347,50 +284,10 @@ footer  .foot   p   {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px)   {
-    /*header name*/
-    header  .topnav  .name  a   {
-        font-size: 36px;
-    }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px)   {
-    /*header name*/
-    header  .topnav  .name  a   {
-        font-size: 36px;
-    }
 
-    /*avalanch*/
-    footer  .avalanch   {
-        justify-content: space-around;
-        display: flex;
-    }
-
-    footer  .avalanch   .business-hours {
-        justify-content: space-between;
-    }
-
-    footer  .avalanch   .reviews    {
-        justify-content: space-between;
-    }
-}
 
 @media only screen and (min-width: 1200px)   {
-    /*header name*/
-    header  .topnav  .name  a   {
-        font-size: 36px;
-    }
-
-    /*avalanch*/
-    footer  .avalanch   {
-        justify-content: space-around;
-        display: flex;
-    }
-
-    footer  .avalanch   .business-hours {
-        justify-content: space-between;
-    }
-
-    footer  .avalanch   .reviews    {
-        justify-content: space-between;
-    }
 }

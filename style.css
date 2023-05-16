@@ -51,17 +51,17 @@ header  .topnav {
     width: 100%;
     height: auto;
     display: flex;
+    justify-content: space-between;
     padding: 0;
     margin: 0 auto;
 }
 
 header  .topnav .burg   {
     display: inline;
-    margin: 0 0 0 5vw;
+    margin: 0 0 0 12px;
     padding: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
+    justify-content: space-around;
+    display: inline-block;
 }
 
 header  .topnav  .burg  span   {
@@ -72,6 +72,10 @@ header  .topnav  .burg  span   {
 
 header  .topnav .name   {
     display: inline;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    display: inline-block;
     width: auto;
     height: auto;
     text-align: center;
@@ -90,6 +94,23 @@ header  .topnav  .name  a   {
 
 header  .topnav .name   a:hover {
     cursor: pointer;
+}
+
+header  .topnav .shopcart   {
+    display: inline;
+    margin: 13px 12px 0 0;
+    padding: 0;
+    justify-content: space-around;
+    display: inline-block;
+}
+
+header  .topnav .shopcart   a   {
+    text-decoration: none;
+}
+
+header  .topnav .shopcart   a   i   {
+    font-size: 21px;
+    color: #fff;
 }
 
 /*main page logo image*/

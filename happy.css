@@ -260,11 +260,12 @@ header  .headnote   .contactus  a:hover {
     right: auto;
 }
 
-.main-content   .reference  .pages  a   {
-    text-decoration: none;
+.main-content   .reference  .pages  .choice {
+    width: 300px;
+    height: auto;
 }
 
-.main-content   .reference  .pages  a   img{
+.main-content   .reference  .pages  .choice img{
     resize: both;
     width: 300px;
     padding: 0;
@@ -274,7 +275,7 @@ header  .headnote   .contactus  a:hover {
     filter: blur(3px);
 }
 
-.main-content   .reference  .pages  a   h4  {
+.main-content   .reference  .pages  .choice   h4  {
     position: absolute;
     bottom: 50%;
     left: 50%;

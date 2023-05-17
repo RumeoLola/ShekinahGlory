@@ -286,6 +286,22 @@ header  .headnote   .contactus  a:hover {
     font-family: 'Courier New', Courier, monospace;
 }
 
+.maps   {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 0 0.5rem 0;
+    text-align: center;
+}
+
+.maps   iframe  {
+    resize: both;
+    width: 80vw;
+    height: 40vh;
+    border-radius: 10px;
+}
+
 footer  {
     position: relative;
     left: 0;

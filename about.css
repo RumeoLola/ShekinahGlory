@@ -244,6 +244,13 @@ header  .headnote   .contactus  a:hover {
     height: auto;
 }
 
+.main-content   .aboutshek  h1  {
+    font-size: 32px;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
 .main-content   .aboutshek  p   {
     font-size: 14px;
     color: #fff;

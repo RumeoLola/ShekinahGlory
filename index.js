@@ -14,8 +14,6 @@ function addToCart()  {
   
   console.log("The food item " + orderfood + " has been added to your cart")
 
-  while (true)  {
-    document.getElementById("cartitems").innerHTML = message;
-  }
+  document.getElementById("cartitems").innerHTML = message
 
 }

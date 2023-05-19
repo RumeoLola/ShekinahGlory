@@ -239,52 +239,10 @@ header  .headnote   .contactus  a:hover {
     margin: 0 auto;
 }
 
-.main-content   .reference  {
-    display: block;
+.main-content   .cartitems  {
+    width: 100%;
+    height: auto;
     text-align: center;
-    justify-content: space-evenly;
-    padding: 0 16px;
-    margin: 12px;
-}
-
-.main-content   .reference  .pages  {
-    display: block;
-    width: 300px;
-    height: auto;
-    margin: 16px;
-    padding: 0;
-    justify-content: space-evenly;
-    display: inline-block;
-    position: relative;
-    top: auto;
-    right: auto;
-}
-
-.main-content   .reference  .pages  .choice {
-    width: 300px;
-    height: auto;
-}
-
-.main-content   .reference  .pages  .choice img{
-    resize: both;
-    width: 300px;
-    padding: 0;
-    margin: 0;
-    height: auto;
-    border-radius: 2%;
-    filter: blur(3px);
-}
-
-.main-content   .reference  .pages  .choice   h4  {
-    position: absolute;
-    bottom: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #000;
-    font-size: 24px;
-    padding: 0;
-    margin: 0;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 footer  {

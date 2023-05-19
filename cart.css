@@ -1,0 +1,328 @@
+html,   body    {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #023020;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: #090;
+}
+
+.container  {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.body   {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 0 0 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: block;
+}
+
+/*header*/
+header  {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    line-height: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #090;
+}
+
+/*topnav bar*/
+header  .topnav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 auto;
+}
+
+header  .topnav .burg   {
+    display: inline;
+    margin: 0 0 0 5vw;
+    padding: 0;
+    justify-content: space-around;
+    display: inline-block;
+}
+
+header  .topnav  .burg  span   {
+    font-size: 21px;
+    cursor: pointer;
+    color: #fff;
+}
+
+header  .topnav .name   {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+}
+
+header  .topnav  .name  a   {
+    font-size: 18px;
+    font-weight: 900;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+header  .topnav .name   a:hover {
+    cursor: pointer;
+}
+
+header  .topnav .shopcart   {
+    display: inline;
+    margin: 13px 5vw 0 0;
+    padding: 0;
+    justify-content: space-around;
+    display: inline-block;
+}
+
+header  .topnav .shopcart   a   {
+    text-decoration: none;
+}
+
+header  .topnav .shopcart   a   i   {
+    font-size: 21px;
+    color: #fff;
+}
+
+/*main page logo image*/
+header  .logohead   {
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+header  .logohead   img {
+    resize: both;
+    width: 80vw;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+}
+
+/*headnote*/
+header  .headnote   {
+    width: 100%;
+    height: auto;
+    padding: 0 0 1rem 0;
+    margin: 0 auto;
+}
+
+header  .headnote   .ordernow   {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+}
+
+header  .headnote   .ordernow  p   {
+    padding: 12px 14px;
+    color: #fff;
+    font-size: 14px;
+    font-family: monospace;
+}
+
+header  .headnote   .contactus  {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+}
+
+header  .headnote   .contactus  a   {
+    text-decoration: none;
+    padding: 12px;
+    color: #000;
+    font-size: 16px;
+    font-family: monospace;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px 3px #555;
+}
+
+header  .headnote   .contactus  a:hover {
+    box-shadow: none;
+}
+
+/*sidenav*/
+.sidenav    {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+}
+
+.sidenav    a   {
+    padding: 8px 8px 8px 4rem;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.sidenav    a:hover {
+    cursor: pointer;
+    text-decoration: underline #f00;
+}
+
+.sidenav    .closebtn   {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 36px;
+    margin-left: 24px;
+    padding: 8px;
+    color: #000;
+    display: block;
+    text-align: left;
+}
+
+.sidenav    .closebtn:hover {
+    color: #f00;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.sidenav    .here   {
+    text-decoration: underline #f00;
+}
+
+.sidenav    .here:hover {
+    cursor: pointer;
+}
+
+/*main-content*/
+.main-content   {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.main-content   .reference  {
+    display: block;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 0 16px;
+    margin: 12px;
+}
+
+.main-content   .reference  .pages  {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 16px;
+    padding: 0;
+    justify-content: space-evenly;
+    display: inline-block;
+    position: relative;
+    top: auto;
+    right: auto;
+}
+
+.main-content   .reference  .pages  .choice {
+    width: 300px;
+    height: auto;
+}
+
+.main-content   .reference  .pages  .choice img{
+    resize: both;
+    width: 300px;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    border-radius: 2%;
+    filter: blur(3px);
+}
+
+.main-content   .reference  .pages  .choice   h4  {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer  {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: #090;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+footer   p   {
+    font-size: 14px;
+    font-family: monospace;
+    padding: 8px;
+    color: #fff;
+}
+
+@media only screen and (max-width: 319px)   {
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px)   {
+}
+
+@media only screen and (min-width: 480px) and (max-width: 599px)   {
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px)   {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px)   {
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px)   {
+
+
+@media only screen and (min-width: 1200px)   {
+}

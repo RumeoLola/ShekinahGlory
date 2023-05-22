@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="bootstrap.min.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/bbd5509038.js" crossorigin="anonymous"></script>
+        <script src="ajax-utils.js"></script>
         <script src="index.js"></script>
         <link href="drinks.css" rel="stylesheet" />
         <title>DRINKS</title>
@@ -56,35 +57,36 @@
             <!--menu items-->
             <div class="reference">
                 <div class="pages">
-                    <a href="african.html">
-                        <img src="gallery/menu.jpg" alt="">
-                        <h4>PALM WINE $7.00</h4>
-                    </a>
-                </div>
-                <div class="pages">
-                    <a href="side.html">
-                        <img src="gallery/menu.jpg" alt="">
-                        <h4>SODA $1.50</h4>
-                    </a>
-                </div>
-                <div class="pages">
                     <div class="choice" onclick="addToCart();">
                         <img src="gallery/menu.jpg" alt="">
-                        <h4>JUICE $2.50</h4>
+                        <button id="foodname">PALM WINE $7.00</button>
                     </div>
                 </div>
                 <div class="pages">
                     <div class="choice" onclick="addToCart();">
                         <img src="gallery/menu.jpg" alt="">
-                        <h4>BOTTLE WATER $1.00</h4>
+                        <button id="foodname">SODA $1.50</button>
                     </div>
                 </div>
                 <div class="pages">
                     <div class="choice" onclick="addToCart();">
                         <img src="gallery/menu.jpg" alt="">
-                        <h4>MALT DRINK $3.00</h4>
+                        <button id="foodname">JUICE $2.50</button>
                     </div>
                 </div>
+                <div class="pages">
+                    <div class="choice" onclick="addToCart();">
+                        <img src="gallery/menu.jpg" alt="">
+                        <button id="foodname">BOTTLE WATER $1.00</button>
+                    </div>
+                </div>
+                <div class="pages">
+                    <div class="choice" onclick="addToCart();">
+                        <img src="gallery/menu.jpg" alt="">
+                        <button id="foodname">MALT DRINK $3.00</button>
+                    </div>
+                </div>
+                <div id="cartitems"></div>
             </div>
         </div>
 

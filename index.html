@@ -37,6 +37,18 @@
                 function closeNav() {
                   document.getElementById("mySidenav").style.width = "0";
                 }
+
+                // help needed here
+                // trying to make the drop down menu collapse when click outside of area
+                // tried it with auto height so that it doesn't cover the entire page height and it still didn't work
+                $(function  ()  {
+                    $("#navigator").blur(function (event) {
+                        var screenWidth = window.innerWidth;
+                        if (screenWidth > 200)  {
+                            $("navigator").collapse('hide');
+                        }
+                    });
+                });
             </script>
             <div class="logohead">
                 <img src="gallery/rest.jpg" alt="bridgesports club">
